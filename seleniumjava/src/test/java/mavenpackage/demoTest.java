@@ -6,9 +6,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class demoTest {
-    
+
     public static void main(String[] args) throws InterruptedException {
-        
+
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
 
@@ -16,7 +16,7 @@ public class demoTest {
 
         Thread.sleep(3000);
 
-        driver.quit();;
+        driver.quit();
 
     }
 
