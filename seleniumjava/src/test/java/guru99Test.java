@@ -1,10 +1,13 @@
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
+import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import java.io.*;
 
-public class SeleniumTestNGTest1 {
+
+public class guru99Test {
     
     @Test
     public void sampleTestMethod() throws InterruptedException{
@@ -13,10 +16,11 @@ public class SeleniumTestNGTest1 {
         WebDriver driver = new ChromeDriver();
 
         driver.get ("http://the-internet.herokuapp.com/");
-        driver.findElement(By.xpath("//h1"));
 
-        driver.findElement(By.xpath("//a[text()='A/B Testing']")).click();
-        Thread.sleep(2000);
-        driver.quit();
+        
+
+
+
     }
+
 }
